@@ -56,25 +56,36 @@
 # print(a)
 
 
-def solve(s):
-    s=str(s)
-    listylist=s.split(' ')
-    lengthofname=len(listylist)
-    i=0
-    newname=[]
-    for words in listylist:
-        i=i+1
-        newwords=words.capitalize()
-        newname.append(newwords)
-        if i==lengthofname:
-            break
-    newname=' '.join(newname)
-    return str(newname)
 
-print(__name__)
-if __name__ == "__main__":
- a = "apple alpha"
- p = solve(a)
 
- print(p)
- print(__name__)
+
+s = "python"
+
+# Indexes:   0  1  2  3  4  5
+# Chars:     P  y  t  h  o  n
+# Negative: -6 -5 -4 -3 -2 -1
+
+
+# print(s[0:])
+# print(s[2:])
+# print(s[:4])
+# print(s[:6])
+# print(s[1:5])
+# print(s[0:6:2]) # 'Pto'  (take every 2nd character from index 0 to 5)
+
+#  reverse index
+
+
+# Indexes:   0  1  2  3  4  5
+# Chars:     P  y  t  h  o  n
+# Negative: -6 -5 -4 -3 -2 -1
+
+
+print(s[::])
+print(s[:-1])
+print(s[-3:]) #(last 3 chars)
+print(s[::])  # means "take everything from start to end"
+print(s[::2]) #Take every 2nd element from start to end
+print(s[::-1]) #Take all elements in reverse
+print(s[::-2]) #Take every 2nd element from end 
+print(s[::-5])
